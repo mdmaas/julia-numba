@@ -11,5 +11,6 @@ function quad_trap(f,a,b,N)
     return int
 end
 
-f(p) = quad_trap( x -> exp(p*x) - 10, -1, 1, 10000) 
-@time f(1)
+g(p) = quad_trap( x -> exp(p*x) - 10, -1, 1, 10000) 
+g(1)
+@time g(1)
